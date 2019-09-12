@@ -1,0 +1,114 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A3EE7F5E-329E-427C-8C83-6C30BE4F346F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhotoStore.Entity</RootNamespace>
+    <AssemblyName>PhotoStore.Entity</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActualJO.cs" />
+    <Compile Include="BalanceReport.cs" />
+    <Compile Include="BaseEntity.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="CouponReport.cs" />
+    <Compile Include="DetailedSalesReport.cs" />
+    <Compile Include="GiftCertificateReport.cs" />
+    <Compile Include="JobOrderDetail.cs" />
+    <Compile Include="JobOrderReport.cs" />
+    <Compile Include="JobOrders.cs" />
+    <Compile Include="MissingJobOrder.cs" />
+    <Compile Include="OrderPackageDetails.cs" />
+    <Compile Include="OrderTransactionView.cs" />
+    <Compile Include="Particulars.cs" />
+    <Compile Include="ParticularTypeView.cs" />
+    <Compile Include="PriviledgeCardCombo.cs" />
+    <Compile Include="ProductList.cs" />
+    <Compile Include="JobOrderByType.cs" />
+    <Compile Include="JobOrderGrid.cs" />
+    <Compile Include="PrivilegeCard.cs" />
+    <Compile Include="Coupon.cs" />
+    <Compile Include="CouponStatus.cs" />
+    <Compile Include="CouponType.cs" />
+    <Compile Include="CreateJO.cs" />
+    <Compile Include="CustomerChild.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerOrderTransaction.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeGroup.cs" />
+    <Compile Include="Freebie.cs" />
+    <Compile Include="GiftCertificate.cs" />
+    <Compile Include="GiftCertificateStatus.cs" />
+    <Compile Include="GiftCertificateType.cs" />
+    <Compile Include="IEntity.cs" />
+    <Compile Include="IParticularEntity.cs" />
+    <Compile Include="JobOrder.cs" />
+    <Compile Include="JobOrderBalance.cs" />
+    <Compile Include="OrderStatus.cs" />
+    <Compile Include="OrderTransaction.cs" />
+    <Compile Include="OrderTransactionDetail.cs" />
+    <Compile Include="OrderTransactionModifiedBy.cs" />
+    <Compile Include="OrderTransactionPayment.cs" />
+    <Compile Include="Package.cs" />
+    <Compile Include="ParticularType.cs" />
+    <Compile Include="PaymentType.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductListDetails.cs" />
+    <Compile Include="ProductTypeReport.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedemptionGCCoupon.cs" />
+    <Compile Include="RejectedOrder.cs" />
+    <Compile Include="RejectedPackage.cs" />
+    <Compile Include="RejectedReport.cs" />
+    <Compile Include="ReleaseReport.cs" />
+    <Compile Include="SalesReport.cs" />
+    <Compile Include="SearchCategory.cs" />
+    <Compile Include="SearchJO.cs" />
+    <Compile Include="SearchPriceList.cs" />
+    <Compile Include="Status.cs" />
+    <Compile Include="Supplier.cs" />
+    <Compile Include="Tally.cs" />
+    <Compile Include="vwJobOrderItems.cs" />
+    <Compile Include="vwParticularsForRejection.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

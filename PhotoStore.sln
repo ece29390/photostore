@@ -1,0 +1,100 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - User Interface", "3 - User Interface", "{24D55DE0-145B-4CFA-9CCB-F3DA037736BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Entity", "4 - Entity", "{9D7AD084-90E3-42BA-927F-CA7E138C9317}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Package", "Package", "{695F7DDB-28B0-4AAC-A448-428C67866F32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code Style Enforcer", "Code Style Enforcer", "{C49F78B3-75C7-4C7C-A964-DEDE4B51E42F}"
+	ProjectSection(SolutionItems) = preProject
+		Code Style Enforcer\ImplementationRules.xml = Code Style Enforcer\ImplementationRules.xml
+		Code Style Enforcer\NameRules.xml = Code Style Enforcer\NameRules.xml
+		Code Style Enforcer\VisibilityRules.xml = Code Style Enforcer\VisibilityRules.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{85A9E74B-D60E-43DE-8632-EDDF78C837A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationUtility", "ApplicationUtility", "{CA3B0934-6261-4FC1-9A78-506268D53FE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoStore.Entity", "PhotoStore.Entity\PhotoStore.Entity.csproj", "{A3EE7F5E-329E-427C-8C83-6C30BE4F346F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoStore", "PhotoStore\PhotoStore.csproj", "{7B3643E9-5985-46C9-AC78-E49AE0CC7267}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpgradePhotoStore", "UpgradePhotoStore\UpgradePhotoStore.csproj", "{DF5B33E6-E4E6-48E1-9E7C-B452281755D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilityServices", "UtilityServices\UtilityServices.csproj", "{9979BE6F-9C30-46B8-980C-C8C301EFA98C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabRat", "LabRat\LabRat.csproj", "{6A2CB030-EDD6-472B-9237-4F40E2157A29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoStore.DataAccess", "PhotoStore.DataAccess\PhotoStore.DataAccess.csproj", "{B7DAC604-0299-47B8-9665-6554820EACAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoStore.BusinessLogic", "PhotoStore.BusinessLogic\PhotoStore.BusinessLogic.csproj", "{986642AB-1238-4121-8490-1077A5B3769B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptExecutor", "ScriptExecutor\ScriptExecutor.csproj", "{9369EA33-37C4-447C-9E1D-0F43BC6B02F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateApplication", "UpdateApplication\UpdateApplication.csproj", "{3EFFC79B-AC67-452E-8C9C-9E10DEEC054C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3EE7F5E-329E-427C-8C83-6C30BE4F346F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3EE7F5E-329E-427C-8C83-6C30BE4F346F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3EE7F5E-329E-427C-8C83-6C30BE4F346F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3EE7F5E-329E-427C-8C83-6C30BE4F346F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B3643E9-5985-46C9-AC78-E49AE0CC7267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B3643E9-5985-46C9-AC78-E49AE0CC7267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B3643E9-5985-46C9-AC78-E49AE0CC7267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B3643E9-5985-46C9-AC78-E49AE0CC7267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF5B33E6-E4E6-48E1-9E7C-B452281755D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF5B33E6-E4E6-48E1-9E7C-B452281755D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF5B33E6-E4E6-48E1-9E7C-B452281755D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF5B33E6-E4E6-48E1-9E7C-B452281755D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9979BE6F-9C30-46B8-980C-C8C301EFA98C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9979BE6F-9C30-46B8-980C-C8C301EFA98C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9979BE6F-9C30-46B8-980C-C8C301EFA98C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9979BE6F-9C30-46B8-980C-C8C301EFA98C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A2CB030-EDD6-472B-9237-4F40E2157A29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A2CB030-EDD6-472B-9237-4F40E2157A29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A2CB030-EDD6-472B-9237-4F40E2157A29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A2CB030-EDD6-472B-9237-4F40E2157A29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7DAC604-0299-47B8-9665-6554820EACAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7DAC604-0299-47B8-9665-6554820EACAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7DAC604-0299-47B8-9665-6554820EACAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7DAC604-0299-47B8-9665-6554820EACAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{986642AB-1238-4121-8490-1077A5B3769B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{986642AB-1238-4121-8490-1077A5B3769B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{986642AB-1238-4121-8490-1077A5B3769B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{986642AB-1238-4121-8490-1077A5B3769B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9369EA33-37C4-447C-9E1D-0F43BC6B02F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9369EA33-37C4-447C-9E1D-0F43BC6B02F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9369EA33-37C4-447C-9E1D-0F43BC6B02F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9369EA33-37C4-447C-9E1D-0F43BC6B02F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EFFC79B-AC67-452E-8C9C-9E10DEEC054C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EFFC79B-AC67-452E-8C9C-9E10DEEC054C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EFFC79B-AC67-452E-8C9C-9E10DEEC054C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EFFC79B-AC67-452E-8C9C-9E10DEEC054C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A3EE7F5E-329E-427C-8C83-6C30BE4F346F} = {9D7AD084-90E3-42BA-927F-CA7E138C9317}
+		{7B3643E9-5985-46C9-AC78-E49AE0CC7267} = {24D55DE0-145B-4CFA-9CCB-F3DA037736BA}
+		{DF5B33E6-E4E6-48E1-9E7C-B452281755D5} = {695F7DDB-28B0-4AAC-A448-428C67866F32}
+		{9979BE6F-9C30-46B8-980C-C8C301EFA98C} = {85A9E74B-D60E-43DE-8632-EDDF78C837A7}
+		{9369EA33-37C4-447C-9E1D-0F43BC6B02F8} = {CA3B0934-6261-4FC1-9A78-506268D53FE1}
+		{3EFFC79B-AC67-452E-8C9C-9E10DEEC054C} = {CA3B0934-6261-4FC1-9A78-506268D53FE1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		CodeStyleEnforcer_Active = -1
+		CodeStyleEnforcer_RulesLocation = 1
+		SolutionGuid = {6F308051-21DE-4F2E-A510-B0CABCEAC971}
+	EndGlobalSection
+EndGlobal

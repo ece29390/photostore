@@ -1,0 +1,10 @@
+uninstall the previous version of PhotoStore from the add remove programs.
+
+1. run UpgradePhotoStore.exe
+2. click upgrade
+3. wait for prompt
+4. Run PhotoStoreDB.exe
+5. Copy the setting on "PhotoStoreDB Setting.jpg"
+6. follow through the installation procedure
+7. Run Setup.exe
+8. follow through the installation procedure

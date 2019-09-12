@@ -1,0 +1,91 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B7DAC604-0299-47B8-9665-6554820EACAF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhotoStore.DataAccess</RootNamespace>
+    <AssemblyName>PhotoStore.DataAccess</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="daJobOrderDetail.cs" />
+    <Compile Include="daPrivilegeCard.cs" />
+    <Compile Include="daCoupon.cs" />
+    <Compile Include="daCouponStatus.cs" />
+    <Compile Include="daCouponType.cs" />
+    <Compile Include="daCustomerChild.cs" />
+    <Compile Include="daHelper.cs" />
+    <Compile Include="daCustomer.cs" />
+    <Compile Include="daEmployee.cs" />
+    <Compile Include="daEmployeeGroup.cs" />
+    <Compile Include="daFreebie.cs" />
+    <Compile Include="daGiftCertificate.cs" />
+    <Compile Include="daGiftCertificateStatus.cs" />
+    <Compile Include="daGiftCertificateType.cs" />
+    <Compile Include="daJobOrder.cs" />
+    <Compile Include="daJobOrderBalance.cs" />
+    <Compile Include="daOrderStatus.cs" />
+    <Compile Include="daOrderTransaction.cs" />
+    <Compile Include="daOrderTransactionDetail.cs" />
+    <Compile Include="daOrderTransactionModifiedBy.cs" />
+    <Compile Include="daOrderTransactionPayment.cs" />
+    <Compile Include="daPackage.cs" />
+    <Compile Include="daParticularType.cs" />
+    <Compile Include="daPaymentType.cs" />
+    <Compile Include="daProduct.cs" />
+    <Compile Include="daProductList.cs" />
+    <Compile Include="daProductListDetails.cs" />
+    <Compile Include="daSales.cs" />
+    <Compile Include="daSupplier.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PhotoStore.Entity\PhotoStore.Entity.csproj">
+      <Project>{A3EE7F5E-329E-427C-8C83-6C30BE4F346F}</Project>
+      <Name>PhotoStore.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UtilityServices\UtilityServices.csproj">
+      <Project>{9979BE6F-9C30-46B8-980C-C8C301EFA98C}</Project>
+      <Name>UtilityServices</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

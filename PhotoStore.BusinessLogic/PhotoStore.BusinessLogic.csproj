@@ -1,0 +1,206 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{986642AB-1238-4121-8490-1077A5B3769B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhotoStore.BusinessLogic</RootNamespace>
+    <AssemblyName>PhotoStore.BusinessLogic</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="blCoupon.cs" />
+    <Compile Include="blCouponStatus.cs" />
+    <Compile Include="blCouponType.cs" />
+    <Compile Include="blCustomer.cs" />
+    <Compile Include="blCustomerChild.cs" />
+    <Compile Include="blDelegates.cs" />
+    <Compile Include="blEmployeeGroup.cs" />
+    <Compile Include="blEnumerations.cs" />
+    <Compile Include="blFreebie.cs" />
+    <Compile Include="blGiftCertificateStatus.cs" />
+    <Compile Include="blJobOrder.cs" />
+    <Compile Include="blJobOrderBalance.cs" />
+    <Compile Include="blJobOrderDetail.cs" />
+    <Compile Include="blOrderStatus.cs" />
+    <Compile Include="blEmployee.cs" />
+    <Compile Include="blOrderTransaction.cs" />
+    <Compile Include="blGiftCertificate.cs" />
+    <Compile Include="blGiftCertificateType.cs" />
+    <Compile Include="blOrderTransactionDetail.cs" />
+    <Compile Include="blOrderTransactionModifiedBy.cs" />
+    <Compile Include="blOrderTransactionPayment.cs" />
+    <Compile Include="blPackage.cs" />
+    <Compile Include="blParticularType.cs" />
+    <Compile Include="blPaymentType.cs" />
+    <Compile Include="blProduct.cs" />
+    <Compile Include="blProductList.cs" />
+    <Compile Include="blProductListDetails.cs" />
+    <Compile Include="BLService.cs" />
+    <Compile Include="blSupplier.cs" />
+    <Compile Include="blPrivilegeCard.cs" />
+    <Compile Include="blUtility.cs" />
+    <Compile Include="CancelBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DateSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DateSelector.Designer.cs">
+      <DependentUpon>DateSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paging\BackwardState.cs" />
+    <Compile Include="Paging\blPaging.cs" />
+    <Compile Include="Paging\ForwardState.cs" />
+    <Compile Include="Paging\InitialState.cs" />
+    <Compile Include="Paging\Next.cs" />
+    <Compile Include="Paging\Page.cs" />
+    <Compile Include="Paging\PageArgs.cs" />
+    <Compile Include="Paging\Paging.cs" />
+    <Compile Include="Paging\PagingState.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportFactories.cs" />
+    <Compile Include="ReportProducts.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\PageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PageControl.Designer.cs">
+      <DependentUpon>PageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCAddEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCAddEdit.Designer.cs">
+      <DependentUpon>UCAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCCustomerDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCCustomerDetail.Designer.cs">
+      <DependentUpon>UCCustomerDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCImportExport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCImportExport.Designer.cs">
+      <DependentUpon>UCImportExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UcSearch.Designer.cs">
+      <DependentUpon>UcSearch.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PhotoStore.DataAccess\PhotoStore.DataAccess.csproj">
+      <Project>{B7DAC604-0299-47B8-9665-6554820EACAF}</Project>
+      <Name>PhotoStore.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PhotoStore.Entity\PhotoStore.Entity.csproj">
+      <Project>{A3EE7F5E-329E-427C-8C83-6C30BE4F346F}</Project>
+      <Name>PhotoStore.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UtilityServices\UtilityServices.csproj">
+      <Project>{9979BE6F-9C30-46B8-980C-C8C301EFA98C}</Project>
+      <Name>UtilityServices</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\DateSelector.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DateSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PageControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCAddEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCCustomerDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCCustomerDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCImportExport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCImportExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UcSearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UcSearch.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UserControls\Import to Database 32 n p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UserControls\Export from Database 32 h p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save All 32 h g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reject.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Arrow Right 24 h m.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Arrow Left 24 n m.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

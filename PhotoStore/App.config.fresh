@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <connectionStrings>
+    
+		<add name="CnnStr" connectionString="Data source = (local)\sqlexpress; initial catalog = PhotoStore_[BranchCode]; integrated security = true"/>
+     
+    </connectionStrings>
+	<appSettings>
+		<add key="gcids" value="3;4;23"/><!--This is the particular type id of different kind of gc's concatinated by semi-colon-->
+		<add key="gcparticulartype" value="PGC"/>
+		<add key="gcproducts" value="8x10 Gift Certificate;10x12 Gift Certificate;3pcs 4r silk Gift Certificate;package D Gift Certificate;"/>
+    <add key="denomgcs" value="P500 Gift Certificate;P1,500.00 Gift Certificate;P2,500.00 Gift Certificate"/>
+		<add key="couponproducts" value="8r coupon;10r coupon"/>
+		<add key="productcouponids" value="5"/>
+		<add key="redemptiongcids" value="10;11;21;22"/>
+		<add key="redemptioncouponids" value="13;14"/>
+		<add key="gcsnotforsale" value=""/><!--Id(s) should not be included in items for sale-->
+		<add key ="searchnotfound" value="No records found!"/>
+		<add key="particularidswithoneitem" value="7;17"/>
+		<add key="admingroup" value="1"/>
+    <!--<add key="BranchCode" value="MM"/>-->
+    <add key="BranchCode" value="[BranchCode]"/>
+    <add key="showtext" value="Description"/><!--Code if code will be displayed;Description if description will be displayed-->
+		<add key="autocouponadd" value="6"/><!--The expiration setting of coupon in months-->
+		<add key="autogcadd" value="12"/><!--The expiration setting of gift certiifcate in months-->
+		<add key="CPPCP" value="5"/>
+		<add key="defaultdescription" value="-Please Select a Description-"/>
+    <add key="ATMFee" value="0.025"/>
+    <add key="CCFee" value="0.05"/>
+    <add key="OrderTransactionDetail" value="true"/>
+    <add key="rejectidsnotincluded" value="3,4,5,10,11,13,14,21,22,23"/>
+    <!--<add key="BranchCodeGC" value="MMGC"/>
+    <add key="BranchCodeCP" value="MMPC"/>-->
+    <add key="BranchCodeGC" value="[BranchCode]GC"/>
+    <add key="BranchCodeCP" value="[BranchCode]PC"/>
+    <add key="GCPrefix" value="MMGC;NEGC"/>
+    <add key="MaxChars" value="6"/>
+    <add key ="ParentGCCouponIds" value="3,5,23"/>
+    <add key="OrderColumnSpacing" value=".625in"/>
+    <add key="OrderWidth" value="7.5in"/>
+    <add key="OrderHeight" value="9.5in"/>
+    <add key="OrderMarginTop" value="0.15in"/>
+    <add key="OrderMarginLeft" value="0.15in"/>
+    <add key="OrderMarginRight" value="0.15in"/>
+    <add key="OrderMarginBottom" value="0.15in"/>
+    <add key="OrderDPiX" value="200"/>
+    <add key="OrderDPiY" value="200"/>
+    <add key="OrderOrientation" value="Landscape"/>
+    <add key="PrinterName" value="[Printer Name]"/>
+    <add key="ImageName" value="EMF"/>
+    <add key="CancelDuration" value="1"/>
+    <add key="BranchCodes" value="MM;NE"/>
+    <add key="RecordPageSize" value="10"/>
+    <add key="InstanceName" value=".\SQLExpress"/>
+    <add key="BackUpPath" value="[Drive]:\[Path]\"/>
+    <add key="DBName" value="PhotoStore_[BranchCode]"/>
+    <add key="CmdUtility" value="C:\Program Files\Microsoft SQL Server\90\Tools\Binn\SQLCMD.EXE"/>
+    <add key="CmdUtility" value="C:\Program Files\Microsoft SQL Server\90\Tools\Binn\SQLCMD.EXE"/>
+    <add key="MSSQLBackUp" value="C:\Program Files\Microsoft SQL Server\MSSQL.1\MSSQL\Backup\"/>
+    <add key="WaitTimeOut" value="30000"/>
+    <add key="RetentionDays" value="14"/>
+    <add key="BackUpArgument" value="-S {0} -q&quot;BACKUP DATABASE {1} TO DISK = '{2}'&quot;"/>
+    <add key="RestoreArgument" value="-S {0} -q&quot;RESTORE DATABASE {1} FROM DISK = '{2}'&quot;"/>
+	   </appSettings>
+</configuration>

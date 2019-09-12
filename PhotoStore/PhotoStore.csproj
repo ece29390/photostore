@@ -1,0 +1,669 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7B3643E9-5985-46C9-AC78-E49AE0CC7267}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhotoStore</RootNamespace>
+    <AssemblyName>PhotoStore</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCoupon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCoupon.Designer.cs">
+      <DependentUpon>AdminCoupon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminParticularType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminParticularType.Designer.cs">
+      <DependentUpon>AdminParticularType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPriceDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPriceDetails.Designer.cs">
+      <DependentUpon>AdminPriceDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminProductList.Designer.cs">
+      <DependentUpon>AdminProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSales.Designer.cs">
+      <DependentUpon>AdminSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CancelPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelPayment.Designer.cs">
+      <DependentUpon>CancelPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GCCouponEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GCCouponEntry.Designer.cs">
+      <DependentUpon>GCCouponEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LookUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LookUp.Designer.cs">
+      <DependentUpon>LookUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MissingJobOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MissingJobOrder.Designer.cs">
+      <DependentUpon>MissingJobOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultipleRejection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultipleRejection.Designer.cs">
+      <DependentUpon>MultipleRejection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintSalesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintSalesReport.Designer.cs">
+      <DependentUpon>PrintSalesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PriviledgeCardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PriviledgeCardForm.Designer.cs">
+      <DependentUpon>PriviledgeCardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrivilegeCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrivilegeCard.Designer.cs">
+      <DependentUpon>PrivilegeCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerAddView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerAddView.Designer.cs">
+      <DependentUpon>CustomerAddView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerSearch.Designer.cs">
+      <DependentUpon>CustomerSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintForm.Designer.cs">
+      <DependentUpon>PrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFreebie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFreebie.Designer.cs">
+      <DependentUpon>AdminFreebie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGiftCertificate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGiftCertificate.Designer.cs">
+      <DependentUpon>AdminGiftCertificate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobOrder.Designer.cs">
+      <DependentUpon>JobOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPackage.Designer.cs">
+      <DependentUpon>AdminPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderReport.Designer.cs">
+      <DependentUpon>OrderReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreJobOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreJobOrder.Designer.cs">
+      <DependentUpon>PreJobOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminProduct.Designer.cs">
+      <DependentUpon>AdminProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminCoupon.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AdminCoupon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminParticularType.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AdminParticularType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPriceDetails.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AdminPriceDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminProductList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AdminProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSales.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AdminSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BalanceReport.rdlc" />
+    <EmbeddedResource Include="CancelPayment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CancelPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CouponReport.rdlc" />
+    <EmbeddedResource Include="DetailedSalesReport.rdlc" />
+    <EmbeddedResource Include="CouponSales.rdlc" />
+    <EmbeddedResource Include="Edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCReport.rdlc" />
+    <EmbeddedResource Include="PrintForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCCouponEntry.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GCCouponEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiftCertificateSales.rdlc" />
+    <EmbeddedResource Include="LookUp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MissingJobOrder.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MissingJobOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultipleRejection.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MultipleRejection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Particulars.rdlc" />
+    <EmbeddedResource Include="Payment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintSalesReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintSalesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PriviledgeCardForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PriviledgeCardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrivilegeCard.resx">
+      <DependentUpon>PrivilegeCard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerAddView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomerAddView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerSearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomerSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminFreebie.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AdminFreebie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGiftCertificate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AdminGiftCertificate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobOrder.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>JobOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPackage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AdminPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderReport.rdlc" />
+    <EmbeddedResource Include="OrderReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OrderReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreJobOrder.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PreJobOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminProduct.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AdminProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductType.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RejectedSales.rdlc" />
+    <EmbeddedResource Include="RejectOrderTransaction.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RejectOrderTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReleaseReport.rdlc" />
+    <EmbeddedResource Include="ReleaseReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReleaseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesReport.rdlc" />
+    <EmbeddedResource Include="SalesReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SalesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchJobOrder.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SearchJobOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Startup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Startup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSupplier.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AdminSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tally.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tally.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Transaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionAddView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TransactionAddView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionFreebie.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TransactionFreebie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionSearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TransactionSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AdminUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerifyPassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VerifyPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewJobOrder.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewJobOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\DataSources\PhotoStore.BusinessLogic.blParticularType.datasource" />
+    <None Include="Properties\DataSources\PhotoStore.Entity.ParticularType.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report.xsc">
+      <DependentUpon>Report.xsd</DependentUpon>
+    </None>
+    <None Include="Report.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Report.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report.xss">
+      <DependentUpon>Report.xsd</DependentUpon>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RejectOrderTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RejectOrderTransaction.Designer.cs">
+      <DependentUpon>RejectOrderTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReleaseReport.Designer.cs">
+      <DependentUpon>ReleaseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs">
+      <DependentUpon>Report.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SalesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesReport.Designer.cs">
+      <DependentUpon>SalesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchJobOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchJobOrder.Designer.cs">
+      <DependentUpon>SearchJobOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Startup.Designer.cs">
+      <DependentUpon>Startup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSupplier.Designer.cs">
+      <DependentUpon>AdminSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tally.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tally.Designer.cs">
+      <DependentUpon>Tally.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction.Designer.cs">
+      <DependentUpon>Transaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionAddView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionAddView.Designer.cs">
+      <DependentUpon>TransactionAddView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionFreebie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionFreebie.Designer.cs">
+      <DependentUpon>TransactionFreebie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionSearch.Designer.cs">
+      <DependentUpon>TransactionSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUser.Designer.cs">
+      <DependentUpon>AdminUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI.cs" />
+    <Compile Include="VerifyPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerifyPassword.Designer.cs">
+      <DependentUpon>VerifyPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewJobOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewJobOrder.Designer.cs">
+      <DependentUpon>ViewJobOrder.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PhotoStore.BusinessLogic\PhotoStore.BusinessLogic.csproj">
+      <Project>{986642AB-1238-4121-8490-1077A5B3769B}</Project>
+      <Name>PhotoStore.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PhotoStore.Entity\PhotoStore.Entity.csproj">
+      <Project>{A3EE7F5E-329E-427C-8C83-6C30BE4F346F}</Project>
+      <Name>PhotoStore.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UtilityServices\UtilityServices.csproj">
+      <Project>{9979BE6F-9C30-46B8-980C-C8C301EFA98C}</Project>
+      <Name>UtilityServices</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Task List 48 n g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Coins 48 n g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Certificate 48 n g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Money 48 n g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\User Group 1 48 n g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\User 2 48 n g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Database Record 48 n g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Handshake 48 n g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Invoice 48 n g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Invoice Stamped 48 n g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\User Group 2 48 h g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Add Document 1 48 h g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Search Database 48 h g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Search 48 h g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Add Document 2 48 h g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Lookup.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Save All 48 n g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Save All 32 h g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Edit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\reject.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Eraser 2 32 h g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Gantt Chart 32 h g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Printer 32 h g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Exit Door 2 32 h g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config.fresh" />
+    <None Include="App.config.old" />
+    <None Include="App.config" />
+    <None Include="App.config.CB" />
+    <None Include="Icons\Done.gif" />
+    <None Include="Icons\CD 32 h g.gif" />
+    <None Include="Icons\CD 24 h g.gif" />
+    <Content Include="Icons\001_01.ico" />
+    <Content Include="Icons\001_03.gif" />
+    <Content Include="Icons\001_46.ico" />
+    <Content Include="Icons\001_47.ico" />
+    <None Include="Icons\Add User 1 32 h g.gif" />
+    <None Include="Icons\Add User 3 24 h g.gif" />
+    <Content Include="Icons\Certificate 32 h i8.ico" />
+    <Content Include="Icons\Check.gif" />
+    <Content Include="Icons\Cross.gif" />
+    <Content Include="Icons\Database Record 32 h i8.ico" />
+    <None Include="Icons\Delete User 1 32 h g.gif" />
+    <Content Include="Icons\Home 1 32 n i8.ico" />
+    <None Include="Icons\List 32 h g.gif" />
+    <None Include="Icons\Search 32 h g.gif" />
+    <Content Include="Icons\Invoice 32 h i8.ico" />
+    <Content Include="Icons\Invoice Stamped 32 h i8.ico" />
+    <Content Include="Icons\logo outline.png" />
+    <Content Include="Icons\Note 32 h i8.ico" />
+    <None Include="Icons\Report - Histogram 48 h g.gif" />
+    <None Include="Icons\Note 48 h g.gif" />
+    <Content Include="Icons\Save Blue 32 h g.gif" />
+    <Content Include="Icons\Search 2 32 h i8.ico" />
+    <Content Include="Icons\Search 32 h i8.ico" />
+    <Content Include="Icons\User Group 2 32 h i8.ico" />
+    <Content Include="Icons\View List 32 h g.gif" />
+    <None Include="Resources\001_02.gif" />
+    <None Include="Resources\001_01.gif" />
+    <None Include="Resources\Delete User 2 24 n t.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
