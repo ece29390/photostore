@@ -125,17 +125,18 @@ namespace PhotoStore
             btnSales.Enabled = mode.Substring(4, 1) == "1" ? true : false;
             btnPriceList.Enabled = mode.Substring(5, 1) == "1" ? true : false;
             restoreToolStripMenuItem.Enabled = mode.Substring(6, 1) == "1" ? true : false;
+            buttonPrivilegeCard.Enabled = mode.Substring(7, 1) == "1" ? true : false;
         }
 
         private void Admin_Load(object sender, EventArgs e)
         {
             if (_employee.EmployeeGroup.Code == "ADMIN")
             {
-                ControlButtons("1111111");
+                ControlButtons("11111111");
             }
             else
             {
-                ControlButtons("1100000");
+                ControlButtons("11000000");
             }
         }
 
@@ -245,6 +246,10 @@ namespace PhotoStore
             }
         }
 
-      
+        private void ButtonPrivilegeCard_Click(object sender, EventArgs e)
+        {
+            var form = new AdminPrivilegeCard();
+            form.ShowDialog();
+        }
     }
 }

@@ -4,6 +4,9 @@ using System.Text;
 
 using System.Data;
 using System.Data.SqlClient;
+using PhotoStore.Entity;
+using PhotoStore.DataAccess;
+
 namespace PhotoStore.BusinessLogic
 {
     public class blPrivilegeCard
@@ -34,6 +37,12 @@ namespace PhotoStore.BusinessLogic
             return retCol;
         }
 
+        public static List<PrivilegeCard> retrieveByCardNumber(string searchCode)
+        {
+            List<PrivilegeCard> retValues = daPrivilegeCard.retrieveLike(searchCode);
+            return retValues;
+        }
+
 
         #region Create
         /// <summary>Create an item entry in the database.</summary>
@@ -46,6 +55,8 @@ namespace PhotoStore.BusinessLogic
             return populateExtentions(ret);
         }
 
+       
+
         /// <summary>Create an item entry in the database.</summary>
         /// <param name="itemObject">Item object.</param>
         public static List<Entity.PrivilegeCard> create(List<Entity.PrivilegeCard> PrivilegeCardList)
@@ -57,6 +68,12 @@ namespace PhotoStore.BusinessLogic
             }
 
             return retrieveByCustomerId(PrivilegeCardList[0].CustomerId);
+        }
+
+        public static void deactiveCardNumber(long id, long customerId,string cardNumber)
+        {
+            daPrivilegeCard.delete(id);
+            daCustomer.executeNonQuery(new SqlCommand($"UPDATE Customer SET PrivilegeCardCode='' WHERE Id={customerId} AND PrivilegeCardCode='{cardNumber}'"));
         }
 
 

@@ -90,6 +90,12 @@
     <Compile Include="AdminPriceDetails.Designer.cs">
       <DependentUpon>AdminPriceDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminPrivilegeCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPrivilegeCard.Designer.cs">
+      <DependentUpon>AdminPrivilegeCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminProductList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,6 +251,9 @@
     <EmbeddedResource Include="AdminPriceDetails.resx">
       <SubType>Designer</SubType>
       <DependentUpon>AdminPriceDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPrivilegeCard.resx">
+      <DependentUpon>AdminPrivilegeCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminProductList.resx">
       <SubType>Designer</SubType>
@@ -418,6 +427,7 @@
     </Compile>
     <None Include="Properties\DataSources\PhotoStore.BusinessLogic.blParticularType.datasource" />
     <None Include="Properties\DataSources\PhotoStore.Entity.ParticularType.datasource" />
+    <None Include="Properties\DataSources\PhotoStore.Entity.PrivilegeCard.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -619,6 +629,7 @@
     <None Include="Icons\Exit Door 2 32 h g.gif" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icons8-membership-card-64.png" />
     <None Include="App.config.fresh" />
     <None Include="App.config.old" />
     <None Include="App.config" />
@@ -637,9 +648,11 @@
     <Content Include="Icons\Cross.gif" />
     <Content Include="Icons\Database Record 32 h i8.ico" />
     <None Include="Icons\Delete User 1 32 h g.gif" />
+    <None Include="Icons\delete.png" />
     <Content Include="Icons\Home 1 32 n i8.ico" />
     <None Include="Icons\List 32 h g.gif" />
     <None Include="Icons\Search 32 h g.gif" />
+    <Content Include="Icons\icons8-membership-card-64.png" />
     <Content Include="Icons\Invoice 32 h i8.ico" />
     <Content Include="Icons\Invoice Stamped 32 h i8.ico" />
     <Content Include="Icons\logo outline.png" />

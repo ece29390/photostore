@@ -4,6 +4,8 @@ using System.Text;
 
 using System.Data;
 using System.Data.SqlClient;
+using PhotoStore.Entity;
+
 namespace PhotoStore.DataAccess
 {
     public class daPrivilegeCard:daHelper
@@ -36,6 +38,23 @@ namespace PhotoStore.DataAccess
 
             return new Entity.PrivilegeCard(ds.Tables[0].Rows[0]);
         }
+
+        public static List<PrivilegeCard> retrieveLike(string searchCode)
+        {
+            var query = $"SELECT * FROM {_TableName} WHERE Code LIKE '%{searchCode}%'";
+            var ds = daHelper.executeSelect(query);
+            List<Entity.PrivilegeCard> entityList = new List<PhotoStore.Entity.PrivilegeCard>();
+            if (ds!=null)
+            {
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    entityList.Add(new Entity.PrivilegeCard(dr));
+                }
+            }
+            return entityList;
+        }
+
+
         #endregion
 
         #region Retrieve

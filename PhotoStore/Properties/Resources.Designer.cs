@@ -203,6 +203,16 @@ namespace PhotoStore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap delete {
+            get {
+                object obj = ResourceManager.GetObject("delete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Delete_User_1_32_h_g {
             get {
                 object obj = ResourceManager.GetObject("Delete User 1 32 h g", resourceCulture);
@@ -276,6 +286,16 @@ namespace PhotoStore.Properties {
         internal static System.Drawing.Bitmap Handshake_48_n_g {
             get {
                 object obj = ResourceManager.GetObject("Handshake 48 n g", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_membership_card_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-membership-card-64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -28,16 +28,16 @@ namespace PhotoStore
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gvDataEntry = new System.Windows.Forms.DataGridView();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.colId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCode = new System.Windows.Forms.DataGridViewLinkColumn();
             this.colIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colExpirationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colRemarks = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gvDataEntry)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,44 +53,17 @@ namespace PhotoStore
             this.colExpirationDate,
             this.colRemarks});
             this.gvDataEntry.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.gvDataEntry.Location = new System.Drawing.Point(14, 12);
+            this.gvDataEntry.Location = new System.Drawing.Point(19, 15);
+            this.gvDataEntry.Margin = new System.Windows.Forms.Padding(4);
             this.gvDataEntry.MultiSelect = false;
             this.gvDataEntry.Name = "gvDataEntry";
             this.gvDataEntry.RowHeadersVisible = false;
             this.gvDataEntry.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gvDataEntry.Size = new System.Drawing.Size(561, 347);
+            this.gvDataEntry.Size = new System.Drawing.Size(748, 427);
             this.gvDataEntry.TabIndex = 5;
-            this.gvDataEntry.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.gvDataEntry_CellValidating);
-            this.gvDataEntry.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvDataEntry_CellEndEdit);
             this.gvDataEntry.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvDataEntry_CellContentClick);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCancel.Image = global::PhotoStore.Properties.Resources._001_02;
-            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancel.Location = new System.Drawing.Point(497, 365);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(78, 37);
-            this.btnCancel.TabIndex = 7;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancel.UseVisualStyleBackColor = true;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAdd.Image = global::PhotoStore.Properties.Resources._001_01;
-            this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAdd.Location = new System.Drawing.Point(416, 364);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 37);
-            this.btnAdd.TabIndex = 6;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.gvDataEntry.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvDataEntry_CellEndEdit);
+            this.gvDataEntry.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.gvDataEntry_CellValidating);
             // 
             // colId
             // 
@@ -111,9 +84,9 @@ namespace PhotoStore
             // colIssueDate
             // 
             this.colIssueDate.DataPropertyName = "IssueDate";
-            dataGridViewCellStyle5.Format = "d";
-            dataGridViewCellStyle5.NullValue = null;
-            this.colIssueDate.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Format = "d";
+            dataGridViewCellStyle1.NullValue = null;
+            this.colIssueDate.DefaultCellStyle = dataGridViewCellStyle1;
             this.colIssueDate.HeaderText = "Issue Date";
             this.colIssueDate.Name = "colIssueDate";
             this.colIssueDate.ReadOnly = true;
@@ -121,10 +94,10 @@ namespace PhotoStore
             // colExpirationDate
             // 
             this.colExpirationDate.DataPropertyName = "ExpirationDate";
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle6.Format = "d";
-            dataGridViewCellStyle6.NullValue = null;
-            this.colExpirationDate.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle2.Format = "d";
+            dataGridViewCellStyle2.NullValue = null;
+            this.colExpirationDate.DefaultCellStyle = dataGridViewCellStyle2;
             this.colExpirationDate.HeaderText = "Expiration Date";
             this.colExpirationDate.Name = "colExpirationDate";
             this.colExpirationDate.ReadOnly = true;
@@ -138,16 +111,47 @@ namespace PhotoStore
             this.colRemarks.ReadOnly = true;
             this.colRemarks.Width = 200;
             // 
+            // btnCancel
+            // 
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancel.Image = global::PhotoStore.Properties.Resources._001_02;
+            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancel.Location = new System.Drawing.Point(663, 449);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(104, 46);
+            this.btnCancel.TabIndex = 7;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancel.UseVisualStyleBackColor = true;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAdd.Image = global::PhotoStore.Properties.Resources._001_01;
+            this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAdd.Location = new System.Drawing.Point(555, 449);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(100, 46);
+            this.btnAdd.TabIndex = 6;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // PrivilegeCard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(587, 413);
+            this.ClientSize = new System.Drawing.Size(783, 508);
             this.Controls.Add(this.gvDataEntry);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAdd);
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "PrivilegeCard";
