@@ -36,6 +36,10 @@ namespace PhotoStore.BusinessLogic.UserControls
             get { return txtAddress.Text.Trim(); }
         }
 
+        public bool IncludeBirthday { get { return checkBoxIncludeBirthday.Checked; } }
+        
+
+
         public DateTime? BirthDay
         {
             get
@@ -71,6 +75,7 @@ namespace PhotoStore.BusinessLogic.UserControls
         private void UCCustomerDetail_Load(object sender, EventArgs e)
         {
             //PopulatePriviledgeCards();
+           
         }
 
         private void cboPriviledgeCard_SelectedIndexChanged(object sender, EventArgs e)
@@ -88,6 +93,12 @@ namespace PhotoStore.BusinessLogic.UserControls
                 txtAddress.Clear();
                 txtMothersName.Clear();
             }
+        }
+
+        private void CheckBoxIncludeBirthday_CheckedChanged(object sender, EventArgs e)
+        {
+            lblBirthDay.Visible = checkBoxIncludeBirthday.Checked;
+            dtpBirthDay.Visible = lblBirthDay.Visible;
         }
     }
 }

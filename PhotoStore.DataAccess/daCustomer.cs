@@ -168,12 +168,12 @@ namespace PhotoStore.DataAccess
             daHelper.addInParameter(sqlCmd, "@MothersName", SqlDbType.VarChar, CustomerObject.MothersName);
             daHelper.addInParameter(sqlCmd, "@Address", SqlDbType.VarChar, CustomerObject.Address);
 
-            if (!CustomerObject.MothersBirthDate.ToString().Contains("1/1/0001 12:00:00 AM"))
+            if (CustomerObject.MothersBirthDate!=DateTime.MinValue)
             {
                 daHelper.addInParameter(sqlCmd, "@MothersBirthDate", SqlDbType.DateTime, CustomerObject.MothersBirthDate);
                 
             }
-            if (!CustomerObject.FathersBirthDate.ToString().Contains("1/1/0001 12:00:00 AM"))
+            if (CustomerObject.FathersBirthDate != DateTime.MinValue)
             {
                 daHelper.addInParameter(sqlCmd, "@FathersBirthDate", SqlDbType.DateTime, CustomerObject.FathersBirthDate);
             }

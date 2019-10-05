@@ -45,7 +45,9 @@ namespace PhotoStore
             customerEntity.FathersName = ucCustomerDetail1.FatherName.Trim();//txtFathersName.Text;
             customerEntity.MothersName = ucCustomerDetail1.MotherName.Trim();//txtMothersName.Text;
             customerEntity.Address = ucCustomerDetail1.Address.Trim();//txtAddress.Text;
-            if (ucCustomerDetail1.BirthDay.HasValue)
+            if (
+                ucCustomerDetail1.IncludeBirthday
+               )
             {
                 customerEntity.FathersBirthDate = ucCustomerDetail1.BirthDay.Value;
                 customerEntity.MothersBirthDate = ucCustomerDetail1.BirthDay.Value;
